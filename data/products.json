@@ -10,7 +10,7 @@
         "deletedAt": "2021-12-11 23:00:00 +0000 UTC"
     },
     {
-        "id": "1",
+        "id": "2",
         "name": "Tea",
         "description": "Tea",
         "price": "20",
@@ -20,7 +20,7 @@
         "deletedAt": "2021-12-11 23:00:00 +0000 UTC"
     },
     {
-        "id": "1",
+        "id": "3",
         "name": "Lipstick",
         "description": "Lipstick",
         "price": "50",

@@ -2,6 +2,7 @@ package apis
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 	"strconv"
 	"time"
@@ -13,7 +14,7 @@ import (
 //GET - /products
 func GetProducts(w http.ResponseWriter, r *http.Request) {
 
-	bytes, err := utils.ReadFile("../json/products.json")
+	bytes, err := utils.ReadFile("../data/products.json")
 	utils.CheckError(err)
 
 	w.Header().Set("Content-Type", "application/json")
@@ -26,6 +27,7 @@ func GetProducts(w http.ResponseWriter, r *http.Request) {
 func GetProductById(w http.ResponseWriter, r *http.Request) {
 	var product Product
 	id := r.URL.Path[2:]
+	fmt.Println(id)
 	key, _ := strconv.Atoi(id)
 	for _, p := range utils.LoadProductsFromJson() {
 		if p.ID == key {

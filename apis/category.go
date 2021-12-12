@@ -12,7 +12,7 @@ import (
 //GET - /categories
 func GetCategories(w http.ResponseWriter, r *http.Request) {
 
-	bytes, err := utils.ReadFile("../json/categories.json")
+	bytes, err := utils.ReadFile("../data/categories.json")
 	utils.CheckError(err)
 
 	w.Header().Set("Content-Type", "application/json")
