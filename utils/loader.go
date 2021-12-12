@@ -3,7 +3,7 @@ package utils
 import (
 	"encoding/json"
 
-	. "../models"
+	. "github.com/busraarsln/rest-api-with-go/models"
 )
 
 func LoadUsersFromJson() []User {

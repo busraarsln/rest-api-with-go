@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"time"
 
-	. "../models"
-	utils "../utils"
+	. "github.com/busraarsln/rest-api-with-go/models"
+	utils "github.com/busraarsln/rest-api-with-go/utils"
 )
 
 //GET - /products
