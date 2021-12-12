@@ -26,7 +26,7 @@ func GetProducts(w http.ResponseWriter, r *http.Request) {
 //GET - /products/{id}
 func GetProductById(w http.ResponseWriter, r *http.Request) {
 	var product Product
-	id := r.URL.Path[2:]
+	id := r.URL.Path[10:]
 	fmt.Println(id)
 	key, _ := strconv.Atoi(id)
 	for _, p := range utils.LoadProductsFromJson() {

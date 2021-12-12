@@ -19,7 +19,7 @@ func main() {
 	r.HandleFunc("/products/{id}", api.UpdateProduct).Methods("PUT")
 	r.HandleFunc("/products/{id}", api.DeleteProduct).Methods("DELETE")
 	r.HandleFunc("/categories", api.GetCategories).Methods("GET")
-	r.HandleFunc("/products/{id}", api.GetCategoryById).Methods("GET")
+	r.HandleFunc("/categories/{id}", api.GetCategoryById).Methods("GET")
 
 	server := &http.Server{
 		Addr:    ":8080",

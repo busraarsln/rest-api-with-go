@@ -24,7 +24,7 @@ func GetCategories(w http.ResponseWriter, r *http.Request) {
 //GET - /categories/{id}
 func GetCategoryById(w http.ResponseWriter, r *http.Request) {
 	var category Category
-	id := r.URL.Path[2:]
+	id := r.URL.Path[12:]
 	key, _ := strconv.Atoi(id)
 	for _, p := range utils.LoadCategoriesFromJson() {
 		if p.ID == key {

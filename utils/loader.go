@@ -8,7 +8,7 @@ import (
 
 //get users data from a json file
 func LoadUsersFromJson() []User {
-	bytes, _ := ReadFile("../json/users.json")
+	bytes, _ := ReadFile("../data/users.json")
 	var users []User
 	json.Unmarshal(bytes, &users)
 	return users
@@ -16,7 +16,7 @@ func LoadUsersFromJson() []User {
 
 //get products data from a json file
 func LoadProductsFromJson() []Product {
-	bytes, _ := ReadFile("../json/products.json")
+	bytes, _ := ReadFile("../data/products.json")
 	var products []Product
 	json.Unmarshal(bytes, &products)
 	return products
@@ -24,7 +24,7 @@ func LoadProductsFromJson() []Product {
 
 //get categories data from a json file
 func LoadCategoriesFromJson() []Category {
-	bytes, _ := ReadFile("../json/categories.json")
+	bytes, _ := ReadFile("../data/categories.json")
 	var categories []Category
 	json.Unmarshal(bytes, &categories)
 	return categories
