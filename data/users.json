@@ -1,0 +1,35 @@
+[
+    {
+        "id": "1",
+        "username": "busraarslan",
+        "firstName": "Busra",
+        "lastName": "Arslan",
+        "email": "busra1arslann@gmail.com",
+        "phoneNumber": "905555555555",
+        "createdAt": "2021-12-11 23:00:00 +0000 UTC",
+        "updatedAt": "2021-12-11 23:00:00 +0000 UTC",
+        "DeletedAt": "2021-12-11 23:00:00 +0000 UTC"
+    },
+    {
+        "id": "2",
+        "username": "CO",
+        "firstName": "Cihan",
+        "lastName": "OZcan",
+        "email": "co@gmail.com",
+        "phoneNumber": "905555555554",
+        "createdAt": "2021-12-11 23:00:00 +0000 UTC",
+        "updatedAt": "2021-12-11 23:00:00 +0000 UTC",
+        "deletedAt": "2021-12-11 23:00:00 +0000 UTC"
+    },
+    {
+        "id" : "3",
+        "username" : "barisarslan",
+        "firstName" : "Baris",
+        "lastName" : "Arslan",
+        "Email" : "ba@gmail.com",
+        "phoneNumber" : "905555555553",
+        "createdAt": "2021-12-11 23:00:00 +0000 UTC",
+        "updatedAt": "2021-12-11 23:00:00 +0000 UTC",
+        "deletedAt": "2021-12-11 23:00:00 +0000 UTC"
+    }
+]

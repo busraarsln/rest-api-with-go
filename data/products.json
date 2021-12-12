@@ -1,0 +1,34 @@
+[
+    {
+        "id": "1",
+        "name": "Television",
+        "description": "Tv",
+        "price": "10000",
+        "categoryId": "1",
+        "createdAt": "2021-12-11 23:00:00 +0000 UTC",
+        "updatedAt": "2021-12-11 23:00:00 +0000 UTC",
+        "deletedAt": "2021-12-11 23:00:00 +0000 UTC"
+    },
+    {
+        "id": "1",
+        "name": "Tea",
+        "description": "Tea",
+        "price": "20",
+        "categoryId": "2",
+        "createdAt": "2021-12-11 23:00:00 +0000 UTC",
+        "updatedAt": "2021-12-11 23:00:00 +0000 UTC",
+        "deletedAt": "2021-12-11 23:00:00 +0000 UTC"
+    },
+    {
+        "id": "1",
+        "name": "Lipstick",
+        "description": "Lipstick",
+        "price": "50",
+        "categoryId": "3",
+        "createdAt": "2021-12-11 23:00:00 +0000 UTC",
+        "updatedAt": "2021-12-11 23:00:00 +0000 UTC",
+        "deletedAt": "2021-12-11 23:00:00 +0000 UTC"
+    }
+    
+
+]
