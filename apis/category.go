@@ -7,6 +7,7 @@ import (
 
 	. "github.com/busraarsln/rest-api-with-go/models"
 	utils "github.com/busraarsln/rest-api-with-go/utils"
+	"github.com/gorilla/mux"
 )
 
 //GET - /categories
@@ -24,11 +25,11 @@ func GetCategories(w http.ResponseWriter, r *http.Request) {
 //GET - /categories/{id}
 func GetCategoryById(w http.ResponseWriter, r *http.Request) {
 	var category Category
-	id := r.URL.Path[12:]
-	key, _ := strconv.Atoi(id)
-	for _, p := range utils.LoadCategoriesFromJson() {
-		if p.ID == key {
-			category = p
+	vars := mux.Vars(r)
+	key, _ := strconv.Atoi(vars["id"])
+	for _, c := range utils.LoadCategoriesFromJson() {
+		if c.ID == key {
+			category = c
 		}
 	}
 

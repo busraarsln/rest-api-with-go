@@ -2,13 +2,13 @@ package apis
 
 import (
 	"encoding/json"
-	"fmt"
 	"net/http"
 	"strconv"
 	"time"
 
 	. "github.com/busraarsln/rest-api-with-go/models"
 	utils "github.com/busraarsln/rest-api-with-go/utils"
+	"github.com/gorilla/mux"
 )
 
 //GET - /products
@@ -26,9 +26,8 @@ func GetProducts(w http.ResponseWriter, r *http.Request) {
 //GET - /products/{id}
 func GetProductById(w http.ResponseWriter, r *http.Request) {
 	var product Product
-	id := r.URL.Path[10:]
-	fmt.Println(id)
-	key, _ := strconv.Atoi(id)
+	vars := mux.Vars(r)
+	key, _ := strconv.Atoi(vars["id"])
 	for _, p := range utils.LoadProductsFromJson() {
 		if p.ID == key {
 			product = p
@@ -43,10 +42,11 @@ func GetProductById(w http.ResponseWriter, r *http.Request) {
 	w.Write(data)
 }
 
+var id int = 3
+
 //POST - /products
 func CreateProduct(w http.ResponseWriter, r *http.Request) {
 
-	var id int = 0
 	var product Product
 	err := json.NewDecoder(r.Body).Decode(&product)
 	utils.CheckError(err)
@@ -70,8 +70,8 @@ func CreateProduct(w http.ResponseWriter, r *http.Request) {
 
 //PUT - /products/{id}
 func UpdateProduct(w http.ResponseWriter, r *http.Request) {
-	id := r.URL.Path[2:]
-	key, _ := strconv.Atoi(id)
+	vars := mux.Vars(r)
+	key, _ := strconv.Atoi(vars["id"])
 	var p Product
 	err := json.NewDecoder(r.Body).Decode(&p)
 	utils.CheckError(err)
@@ -89,8 +89,8 @@ func UpdateProduct(w http.ResponseWriter, r *http.Request) {
 
 //DELETE - /products/{id}
 func DeleteProduct(w http.ResponseWriter, r *http.Request) {
-	id := r.URL.Path[2:]
-	key, _ := strconv.Atoi(id)
+	vars := mux.Vars(r)
+	key, _ := strconv.Atoi(vars["id"])
 	var p Product
 	err := json.NewDecoder(r.Body).Decode(&p)
 	utils.CheckError(err)

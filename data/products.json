@@ -1,34 +1,32 @@
 [
     {
-        "id": "1",
+        "id": 1,
         "name": "Television",
         "description": "Tv",
-        "price": "10000",
+        "price": 10000.0,
         "categoryId": "1",
-        "createdAt": "2021-12-11 23:00:00 +0000 UTC",
-        "updatedAt": "2021-12-11 23:00:00 +0000 UTC",
-        "deletedAt": "2021-12-11 23:00:00 +0000 UTC"
+        "createdAt": "2000-01-01T00:00:00Z",
+        "updatedAt": "2000-01-01T00:00:00Z",
+        "deletedAt": "2000-01-01T00:00:00Z"
     },
     {
-        "id": "2",
+        "id": 2,
         "name": "Tea",
         "description": "Tea",
-        "price": "20",
+        "price": 20.0,
         "categoryId": "2",
-        "createdAt": "2021-12-11 23:00:00 +0000 UTC",
-        "updatedAt": "2021-12-11 23:00:00 +0000 UTC",
-        "deletedAt": "2021-12-11 23:00:00 +0000 UTC"
+        "createdAt": "2000-01-01T00:00:00Z",
+        "updatedAt": "2000-01-01T00:00:00Z",
+        "deletedAt": "2000-01-01T00:00:00Z"
     },
     {
-        "id": "3",
+        "id": 3,
         "name": "Lipstick",
         "description": "Lipstick",
-        "price": "50",
+        "price": 50.0,
         "categoryId": "3",
-        "createdAt": "2021-12-11 23:00:00 +0000 UTC",
-        "updatedAt": "2021-12-11 23:00:00 +0000 UTC",
-        "deletedAt": "2021-12-11 23:00:00 +0000 UTC"
+        "createdAt": "2000-01-01T00:00:00Z",
+        "updatedAt": "2000-01-01T00:00:00Z",
+        "deletedAt": "2000-01-01T00:00:00Z"
     }
-    
-
 ]
